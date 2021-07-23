@@ -1,0 +1,10 @@
+{
+    "jsonrpc":"2.0",
+    "id":1,
+    "method":"author_insertKey",
+    "params": [
+        "babe",
+        "screen connect robust reject beauty grab symptom buffalo actress rare mixed agent//3//babe",
+        "0x5495f51074d29c55af8c99aefe7e75afea1e4c1652289dbc0a217ebba1110014"
+    ]
+}

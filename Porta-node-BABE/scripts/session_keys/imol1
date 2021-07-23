@@ -1,0 +1,10 @@
+{
+    "jsonrpc":"2.0",
+    "id":1,
+    "method":"author_insertKey",
+    "params": [
+        "imol",
+        "screen connect robust reject beauty grab symptom buffalo actress rare mixed agent//1//im_online",
+        "0x12b4b213bc690db78d2cb3b68d9ed342614ab53fecfba88d82c08b580c196a18"
+    ]
+}

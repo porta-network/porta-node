@@ -1,0 +1,10 @@
+{
+    "jsonrpc":"2.0",
+    "id":1,
+    "method":"author_insertKey",
+    "params": [
+        "audi",
+        "screen connect robust reject beauty grab symptom buffalo actress rare mixed agent//2//authority_discovery",
+        "0x2aefc6537ce58df2f47f2f3d91f9fe53def326b990e7a1dc3aed187683758a43"
+    ]
+}

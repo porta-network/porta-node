@@ -1,0 +1,10 @@
+{
+    "jsonrpc":"2.0",
+    "id":1,
+    "method":"author_insertKey",
+    "params": [
+        "gran",
+        "screen connect robust reject beauty grab symptom buffalo actress rare mixed agent//1//grandpa",
+        "0x7589b83b2940f4c79943e597e1633ce7bd8399bc0cfaba5b440e805aa2b056a9"
+    ]
+}
