@@ -5,7 +5,7 @@
 	<title>Substrate node</title>
 	<link rel="shortcut icon" href="/favicon.png" />
 	<script type="module">
-import { start_client, default as init } from './pkg/node_cli.js';
+import { start_client, default as init } from './pkg/porta_cli.js';
 
 function log(msg) {
 	document.getElementsByTagName('body')[0].innerHTML += msg + '\n';
@@ -13,7 +13,7 @@ function log(msg) {
 
 async function start() {
 	log('Loading WASM');
-	await init('./pkg/node_cli_bg.wasm');
+	await init('./pkg/porta_cli_bg.wasm');
 	log('Fetching chain spec');
 	const chain_spec_response = await fetch("https://raw.githubusercontent.com/paritytech/substrate/master/bin/node/cli/res/flaming-fir.json");
 	const chain_spec_text = await chain_spec_response.text();

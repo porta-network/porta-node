@@ -21,14 +21,14 @@
 use sc_chain_spec::ChainSpecExtension;
 use sp_core::{Pair, Public, crypto::UncheckedInto, sr25519};
 use serde::{Serialize, Deserialize};
-use node_runtime::{
+use porta_runtime::{
 	AuthorityDiscoveryConfig, BabeConfig, BalancesConfig, ContractsConfig, CouncilConfig,
 	DemocracyConfig, GrandpaConfig, ImOnlineConfig, SessionConfig, SessionKeys, StakerStatus,
 	StakingConfig, ElectionsConfig, IndicesConfig, SocietyConfig, SudoConfig, SystemConfig,
 	TechnicalCommitteeConfig, wasm_binary_unwrap, MAX_NOMINATIONS,
 };
-use node_runtime::Block;
-use node_runtime::constants::currency::*;
+use porta_runtime::Block;
+use porta_runtime::constants::currency::*;
 use sc_service::ChainType;
 use hex_literal::hex;
 use sc_telemetry::TelemetryEndpoints;
@@ -39,7 +39,7 @@ use sp_authority_discovery::AuthorityId as AuthorityDiscoveryId;
 use sp_runtime::{Perbill, traits::{Verify, IdentifyAccount}};
 
 pub use node_primitives::{AccountId, Balance, Signature};
-pub use node_runtime::GenesisConfig;
+pub use porta_runtime::GenesisConfig;
 
 type AccountPublic = <Signature as Verify>::Signer;
 
@@ -307,7 +307,7 @@ pub fn testnet_genesis(
 		},
 		pallet_babe: BabeConfig {
 			authorities: vec![],
-			epoch_config: Some(node_runtime::BABE_GENESIS_EPOCH_CONFIG),
+			epoch_config: Some(porta_runtime::BABE_GENESIS_EPOCH_CONFIG),
 		},
 		pallet_im_online: ImOnlineConfig {
 			keys: vec![],

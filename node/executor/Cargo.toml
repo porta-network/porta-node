@@ -1,12 +1,12 @@
 [package]
 name = "node-executor"
 version = "2.0.0"
-authors = ["Parity Technologies <admin@parity.io>"]
-description = "Substrate node implementation in Rust."
+authors = ['Porta Network <https://porta.network>']
+description = 'The base node for the Porta network'
 edition = "2018"
-license = "Apache-2.0"
-homepage = "https://substrate.dev"
-repository = "https://github.com/paritytech/substrate/"
+license = 'Unlicense'
+homepage = 'https://porta.network'
+repository = 'https://github.com/porta-network/porta-node'
 
 [package.metadata.docs.rs]
 targets = ["x86_64-unknown-linux-gnu"]
@@ -14,7 +14,7 @@ targets = ["x86_64-unknown-linux-gnu"]
 [dependencies]
 codec = { package = "parity-scale-codec", version = "2.0.0" }
 node-primitives = { version = "2.0.0", git = 'https://github.com/paritytech/substrate.git', tag = 'monthly-2021-05' }
-node_runtime = { version = "2.0.0", path = "../runtime" }
+porta_runtime = { version = "2.0.0", path = "../runtime" }
 sc-executor = { version = "0.9.0", git = 'https://github.com/paritytech/substrate.git', tag = 'monthly-2021-05' }
 sp-core = { version = "3.0.0", git = 'https://github.com/paritytech/substrate.git', tag = 'monthly-2021-05' }
 sp-keystore = { version = "0.9.0", git = 'https://github.com/paritytech/substrate.git', tag = 'monthly-2021-05' }

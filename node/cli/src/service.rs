@@ -23,7 +23,7 @@
 use std::sync::Arc;
 use sc_consensus_babe;
 use node_primitives::Block;
-use node_runtime::RuntimeApi;
+use porta_runtime::RuntimeApi;
 use sc_service::{
 	config::Configuration, error::Error as ServiceError, RpcHandlers, TaskManager,
 };
@@ -546,8 +546,8 @@ mod tests {
 		Environment, Proposer, BlockImportParams, BlockOrigin, ForkChoiceStrategy, BlockImport,
 	};
 	use node_primitives::{Block, DigestItem, Signature};
-	use node_runtime::{BalancesCall, Call, UncheckedExtrinsic, Address};
-	use node_runtime::constants::{currency::CENTS, time::SLOT_DURATION};
+	use porta_runtime::{BalancesCall, Call, UncheckedExtrinsic, Address};
+	use porta_runtime::constants::{currency::CENTS, time::SLOT_DURATION};
 	use codec::Encode;
 	use sp_core::{
 		crypto::Pair as CryptoPair,
@@ -572,8 +572,8 @@ mod tests {
 	type AccountPublic = <Signature as Verify>::Signer;
 
 	#[test]
-	// It is "ignored", but the node-cli ignored tests are running on the CI.
-	// This can be run locally with `cargo test --release -p node-cli test_sync -- --ignored`.
+	// It is "ignored", but the porta-cli ignored tests are running on the CI.
+	// This can be run locally with `cargo test --release -p porta-cli test_sync -- --ignored`.
 	#[ignore]
 	fn test_sync() {
 		let keystore_path = tempfile::tempdir().expect("Creates keystore path");

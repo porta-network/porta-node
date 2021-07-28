@@ -1,14 +1,14 @@
 [package]
-name = "node-cli"
+name = "porta-cli"
 version = "2.0.0"
-authors = ["Parity Technologies <admin@parity.io>"]
-description = "Generic Substrate node implementation in Rust."
+authors = ['Porta Network <https://porta.network>']
+description = 'The base node for the Porta network'
 build = "build.rs"
 edition = "2018"
-license = "GPL-3.0-or-later WITH Classpath-exception-2.0"
-default-run = "substrate"
-homepage = "https://substrate.dev"
-repository = "https://github.com/paritytech/substrate/"
+license = 'Unlicense'
+default-run = "porta"
+homepage = 'https://porta.network'
+repository = 'https://github.com/porta-network/porta-node'
 
 [package.metadata.wasm-pack.profile.release]
 # `wasm-opt` has some problems on linux, see
@@ -25,7 +25,7 @@ is-it-maintained-issue-resolution = { repository = "paritytech/substrate" }
 is-it-maintained-open-issues = { repository = "paritytech/substrate" }
 
 [[bin]]
-name = "substrate"
+name = "porta"
 path = "bin/main.rs"
 required-features = ["cli"]
 
@@ -90,7 +90,7 @@ pallet-staking = { version = "3.0.0", git = 'https://github.com/paritytech/subst
 pallet-grandpa = { version = "3.0.0", git = 'https://github.com/paritytech/substrate.git', tag = 'monthly-2021-05' }
 
 # node-specific dependencies
-node_runtime = { version = "2.0.0", path = "../runtime" }
+porta_runtime = { version = "2.0.0", path = "../runtime" }
 node-rpc = { version = "2.0.0", git = 'https://github.com/paritytech/substrate.git', tag = 'monthly-2021-05' }
 node-primitives = { version = "2.0.0", git = 'https://github.com/paritytech/substrate.git', tag = 'monthly-2021-05' }
 node-executor = { version = "2.0.0", path = "../executor" }
@@ -165,12 +165,12 @@ cli = [
 	"try-runtime-cli",
 ]
 runtime-benchmarks = [
-	"node_runtime/runtime-benchmarks",
+	"porta_runtime/runtime-benchmarks",
 	"frame-benchmarking-cli",
 ]
 # Enable features that allow the runtime to be tried and debugged. Name might be subject to change
 # in the near future.
 try-runtime = [
-	"node_runtime/try-runtime",
+	"porta_runtime/try-runtime",
 	"try-runtime-cli",
 ]
