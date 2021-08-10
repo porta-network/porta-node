@@ -1,6 +1,6 @@
 {
-  "name": "Staging Testnet",
-  "id": "staging_testnet",
+  "name": "Padlock",
+  "id": "padlock_testnet",
   "chainType": "Live",
   "bootNodes": [
     "/ip4/46.101.22.15/tcp/30333/p2p/12D3KooWLP91fdizrEaGBAbPoZRbLM4D6e11UQeiDicndvkkMmkp"
