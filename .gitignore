@@ -16,3 +16,5 @@
 .direnv
 
 data
+scripts
+staging_testnet
